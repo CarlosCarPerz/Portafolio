@@ -1,0 +1,28 @@
+:root {
+    /* Titulos */
+    --fontZiseT: 2.2rem;
+    --colorT: #464646;
+    --interT: 25.83px;
+    --FontWeightT: 700;
+
+    /* Parrafo */
+    --fontZiseP: 1.4rem;
+    --colorP: #464646;
+    --interP: 16.44px;
+    --FontWeightP: 400;
+}
+
+.titulo {
+    font-size: var(--fontZiseT);
+    color: var(--colorT);
+    line-height: var(--interT);
+    font-weight: var(--FontWeightT);
+}
+
+.parrafo {
+    font-size: var(--fontZiseP);
+    color: var(--colorP);
+    line-height: var(--interP);
+    font-weight: var(--FontWeightP);
+    margin: 10px 0;
+}

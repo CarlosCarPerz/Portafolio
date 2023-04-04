@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 4px 10px;
+    align-items: center;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logoContainer i {
+    margin: 0 8px;
+    font-size: 1.4rem;
+}
+
+.logoContainer h1 {
+    font-size: 1.2rem;
+}
+
+.navContainer nav {
+    display: flex;
+}
+
+.navContainer ul {
+    display: none;
+    margin: 0 10px;
+    list-style: none;
+    
+}
+
+.navContainer ul li {
+    margin: 0 4px;
+}
+
+nav a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #058f07;
+    font-weight: 400;
+}

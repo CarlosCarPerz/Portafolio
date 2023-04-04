@@ -1,0 +1,9 @@
+:root {
+    --BackSec: rgb(166, 213, 167);
+}
+
+.sobreMiContainer {
+    background-color: var(--BackSec);
+    padding: 16px;
+}
+
