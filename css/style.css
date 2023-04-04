@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 4px;
+}
+
+.logoContainer {
+    display: flex;
+}
+
+.navContainer nav {
+    display: flex;
+}
+
+.navContainer ul {
+    display: none;
+    margin: 0 10px;
+    list-style: none;
+    
+}
+
+.navContainer ul li {
+    margin: 0 4px;
+}
+
