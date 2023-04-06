@@ -78,3 +78,31 @@ article span {
     margin: 8px 0;
     height: 35vw;
 }
+
+.createdBy {
+    text-align: center;
+    font-size: 2rem;
+    padding: 16px;
+    font-weight: bold;
+}
+
+@media (min-width: 1440px) {
+    .titulo {
+        font-size: 5.2rem;
+        line-height: 61.05px;
+    }
+    .subtitulo {
+        font-size: 3.2rem;
+        margin: 16px 0;
+    }
+    .parrafo {
+        font-size: 2.2rem;
+        line-height: 25.83px;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    article span {
+        font-size: 1.8rem;
+    }
+}

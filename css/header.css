@@ -31,12 +31,49 @@ header {
 }
 
 .navContainer ul li {
-    margin: 0 4px;
+    margin: 0 20px;
+    font-size: 1.6rem;
 }
 
 nav a {
-    font-size: 1rem;
+    font-size: 1.6rem;
     text-decoration: none;
     color: #058f07;
     font-weight: 400;
+    transition: 0.5s;
+}
+
+nav li:hover {
+    color: #1ead20;
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+nav .mail {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav .mail:hover {
+    color: #1ead20;
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+@media (min-width: 760px) {
+    header {
+        padding: 16px 32px;
+    }
+    nav .mail {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    header {
+        padding: 16px 64px;
+    }
+    .navContainer ul {
+        display: flex;
+    }
 }

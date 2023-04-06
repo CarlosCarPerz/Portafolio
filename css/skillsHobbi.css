@@ -7,3 +7,17 @@
     grid-template-columns: 45% 45%;
     justify-content: space-around;
 }
+
+@media (min-width: 760px) {
+    .cardContainer {
+        grid-template-columns: repeat(3, 30%);
+        padding: 16px 32px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .cardContainer {
+        grid-template-columns: repeat(6, 15%);
+        padding: 16px 64px;
+    }
+}

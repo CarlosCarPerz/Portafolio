@@ -15,5 +15,32 @@
 
 .academicContainer .imgContainer img {
     height: 70%;
-    margin: 20px 0 ;
+    margin: 20px 0;
+}
+
+@media (min-width: 760px) {
+    .academicContainer .subcontainer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        justify-content: space-between;
+    }
+    .academicContainer .imgContainer {
+        height: 20vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .academicContainer .imgContainer img {
+        height: 60%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .academicContainer .subcontainer {
+        grid-template-columns: repeat(3, 25%);
+        justify-content: center;
+    }
+    .academicContainer article {
+        margin: 0 16px;
+    }
 }

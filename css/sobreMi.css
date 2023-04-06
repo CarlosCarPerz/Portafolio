@@ -7,3 +7,20 @@
     padding: 16px;
 }
 
+@media (min-width: 760px) {
+    .sobreMiContainer {
+        padding: 32px;
+    }
+    .sobreMiContainer .parrafo {
+        width: 790px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .sobreMiContainer {
+        padding: 64px;
+    }
+    .sobreMiContainer .parrafo {
+        width: 80%;
+    }
+}

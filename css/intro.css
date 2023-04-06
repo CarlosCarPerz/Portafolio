@@ -27,3 +27,49 @@
     color: #058f07;
     font-size: 1.4rem;
 }
+
+.introContainer a:hover {
+    color: #1ead20;
+}
+
+.introContainer li {
+    transition: 0.5s;
+}
+
+.introContainer li:hover {
+    scale: 1.2;
+    transition: 0.5s;
+}
+
+@media (min-width: 760px) {
+    .introContainer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 32px;
+    }
+    .introContainer img {
+        height: 146px;
+        width: 146px;
+    }
+    .introContainer ul {
+        justify-content: flex-start;
+    }
+    .introContainer a {
+        margin: 0 20px 0 0;
+    }
+}
+
+@media (min-width: 1440px) {
+    .introContainer {
+        padding: 64px;
+    }
+    .introContainer img {
+        height: 368px;
+        width: 368px;
+    }
+    .introContainer a {
+        font-size: 1.6rem;
+        margin: 0 40px 0 0;
+    }
+}

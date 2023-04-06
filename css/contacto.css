@@ -7,13 +7,90 @@
     padding: 16px;
 }
 
-form {
+.contacto p {
+    font-size: 1.6rem;
+}
+
+.contacto form {
     width: 100%;
 }
 
-form input {
-    height: 56px;
+.contacto form label {
+    font-size: 1.6rem;
+}
+
+.contacto form input {
+    height: 20px;
     width: 100%;
     font-size: 1.6rem;
+    border: none;
+}
+
+.contacto form input:focus {
+    outline: none;
+}
+
+.contactInput {
+    height: 56px;
+    background-color: white;
     padding: 4px;
+    font-size: 1.4rem;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 6px;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0,0.2);
+}
+
+input::placeholder {
+    color: #cacaca;
+}
+
+.mensajeArea {
+    height: auto;
+    background-color: white;
+    padding: 4px;
+    font-size: 1.4rem;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 6px;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0,0.2);
+}
+
+.mensajeArea textarea {
+    height: 120px;
+    border: none;
+    font-size: 1.4rem;
+    font-family: 'Raleway', sans-serif;;
+}
+
+.mensajeArea textarea:focus {
+    outline: none;
+}
+
+.boton3 {
+    border: 1px solid #04810c;
+    background-color: #04810c;
+    color: #E5E5E5;
+    height: 40px;
+    width: 150px;
+    font-size: 1.4rem;
+    font-family: 'Raleway', sans-serif;
+    margin: 8px 12px 8px 0;
+    font-weight: bold;
+}
+
+.boton3:hover {
+    scale: 1.1;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+    .contacto {
+        padding: 16px 128px;
+    }
 }
