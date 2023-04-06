@@ -1,0 +1,19 @@
+:root {
+    --BackSec: rgb(166, 213, 167);
+}
+
+.academicContainer {
+    background-color: var(--BackSec);
+    padding: 32px;
+}
+
+.academicContainer article {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.academicContainer .imgContainer img {
+    height: 70%;
+    margin: 20px 0 ;
+}

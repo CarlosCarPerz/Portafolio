@@ -1,0 +1,19 @@
+:root {
+    --BackSec: rgb(166, 213, 167);
+}
+
+.contacto {
+    background-color: var(--BackSec);
+    padding: 16px;
+}
+
+form {
+    width: 100%;
+}
+
+form input {
+    height: 56px;
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 4px;
+}
