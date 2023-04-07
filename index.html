@@ -55,7 +55,7 @@
             <img src="./pics/97265469.jpg" alt="Imagen sobre mi">
             <div>
                 <h2 class="titulo">Hola, mi nombre es Carlos Eduardo Carvajal, soy estudiante de programación front-end</h2>
-                <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, rem mollitia neque temporibus quas, placeat ipsum praesentium, aperiam dolorum vel ab repellendus molestias eum commodi veniam pariatur quo ipsa dolores.</p>
+                <p class="parrafo">Tengo 26 años de edad, soy originario de Jalisco, México 🌮. Actualmente me encuentro en aprendizaje de desarrollo front-end en Oracle Next Education (ONE) impartido por Alura-latam.</p>
                 <ul>
                     <li>
                         <a href="https://github.com/CarlosCarPerz">Github</a>
@@ -67,15 +67,15 @@
                         <a href="https://www.instagram.com/carlos.carvajal.p/">Instagram</a>
                     </li>
                     <li>
-                        <a href="" id="btn-generar-pdf" onclick="generarPDF()">Curriculo</a>
+                        <a href="#">Curriculo</a>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="sobreMiContainer" id="sobreMiContainer">
             <h2 class="titulo">Sobre mi</h2>
-            <p class="parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quae repellendus molestias doloribus quaerat reprehenderit consequuntur, ratione quibusdam! Nesciunt commodi quidem ipsam ad animi facilis atque porro aliquam? Soluta, eaque.</p><br>
-            <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit quibusdam ipsam error ullam, est et porro rem ipsum, dolore eaque alias, perspiciatis quia assumenda. Dolores earum ratione reprehenderit pariatur?</p>
+            <p class="parrafo">Les contaré un poco sobre mi. Tengo una gran pasión por la ciencia y la tecnología. Me gusta hacer cualquier método o proceso mas efectivo y en el menor tiempo posible. En bachillerato me capacité en el área informática ya que desde chico me llamaba la atención. Posteriormente estudié la licenciatura en Químico Farmacéutico Biólogo ya que tenía un gran interés en el ámbito forense.</p><br>
+            <p class="parrafo">Actualmente ejerzo mi licenciatura como genetista forense, y quise aprender a programar no como remplazo de mis estudios, sino como un complemento, creo que hay muchas cosas que se pueden mejorar o agilizar creando programas en dicha área.</p>
         </section>
         <section class="skillsContainer" id="skillsContainer">
             <div class="skills">
@@ -263,7 +263,7 @@
                     <label for="mensaje">Mensaje:</label><br>
                     <textarea id="mensaje" name="mensaje" required></textarea>
                 </div><br><br>
-                <button class="boton3" type="submit">Enviar</button>
+                <button class="boton3" type="submit" id="submit-button" disabled>Enviar</button>
             </form>
         </section>
         <section class="createdBy">
@@ -271,8 +271,25 @@
         </section>
     </footer>
     <script src="https://kit.fontawesome.com/6ac07312a4.js" crossorigin="anonymous"></script>
-    <script src="./sendEmail.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
+    <script src="./botonEnviar.js"></script>
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("ruMNaABKBp1mkr1m8");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            emailjs.sendForm('service_5gvo7rc', 'template_v2asbrk', this)
+                .then(function() {
+                alert('El mensaje se ha enviado correctamente!');
+                }, function(error) {
+                alert('Hubo un error al enviar el mensaje: ' + error);
+            });
+        });
+        }
+    </script>
 </body>
 </html>

@@ -73,5 +73,10 @@ article div form:hover {
         align-items: center;
         justify-content: center;
     }
-
+    .boton1 {
+        font-size: 1.4rem;
+    }
+    .boton2 {
+        font-size: 1.4rem;
+    }
 }
